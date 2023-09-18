@@ -53,6 +53,30 @@ li
     padding: 20px;
 }
 
+.hidable {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+
+    .convertible {
+        flex-direction: column;
+    }
+    .hidable {
+        display: none;
+    }
+    h2 {
+     font-size: 12px;
+    }
+    body {
+        margin-top: 300px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+}
+
 .box {
     display: flex;
     margin: 10px;

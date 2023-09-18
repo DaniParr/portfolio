@@ -11,7 +11,7 @@
 </head>
 <body style="padding-left: 20px; padding-right: 20px;">
     <header style="margin-top: -30px;">
-        <div class="container" style="max-width: 100%; height: 100px; flex-direction: row; justify-content: space-between; padding-top: 30px;">
+        <div class="container" style="max-width: 100%; height: auto; justify-content: space-between; padding-top: 30px;">
             <div style="display: flex; flex-direction: row;">
                 <img style="max-width: 100px; max-height: 100px; margin-right: 20px;" src="imgs/dpicon.png" alt="">
                 <h1><a href="main.html">Daniel Parra</a></h1>
@@ -20,7 +20,7 @@
             <div style="padding: 20px; display: flex; flex-direction: row;">
                 <p><a style="padding: 20px;">Resume</a></p>
                 <p>|</p>
-                <p><a style="padding: 20px;">Contact</a></p>
+                <p><a href="contact.html" style="padding: 20px;">Contact</a></p>
                 <p>|</p>
                 <p><a style="padding: 20px;" href="involvements.html">Involvements</a></p>
             </div>
@@ -34,14 +34,14 @@
             <h1 class="largeTitle">Hello</h1>
             <p>My name is Daniel Parra. I am currently pursuing my Bachelors in Computer Science at the University of Florida. I am passionate about software development, artificial intelligence, machine learning, and exploring the cross hairs between computers and biological systems.</p>
         </div>
-        <div class="container" style="width:50%; height: 300px; margin-right: -50px;">
+        <div class="container hidable" style="width:50%; height: 300px; margin-right: -50px;">
           <img src="imgs/danielparra.jpeg" alt="">  
         </div>
     </div>
 
     <h1 class="largeTitle" style="padding: 20px;">I'm Currently Working On...</h1>
 
-    <a><div class="container" style="width:90%; height: auto; margin-bottom: 50px; margin-left: -50px; flex-direction: row;">
+    <a><div class="container convertible" style="width:90%; height: auto; margin-bottom: 50px; margin-left: -50px;">
         <div style="margin-left: 50px; margin-right: 20px;">
             <h2 class="mediumTitle">
                 SHPE iOS App
@@ -50,11 +50,11 @@
                 The new SHPE iOS App aims to provide seemless access to SHPE resources at UF and increase involvement. The app will allow students to access their points to quantify their attendance.
             </p>
         </div>
-        <img src="imgs/shpeApp/shpelogo.png" alt="">
+        <img style="margin-left: 50px;" src="imgs/shpeApp/shpelogo.png" alt="">
     </div></a>
 
-    <div class="container" style="width:100%; height: auto; margin-bottom: 50px; margin-left: 10%; flex-direction: row;">
-        <img src="imgs/cellDetector/smalldisp.png" alt="">
+    <div class="container convertible" style="width:100%; height: auto; margin-bottom: 50px; margin-left: 10%;">
+        <a href="projects/cell_detector.html"><img src="imgs/cellDetector/smalldisp.png" alt=""></a>
         <div style="margin-left: 20px; margin-right: 100px;">
             <h2 class="mediumTitle">
                 Cell Detector AI
@@ -77,7 +77,7 @@
                 The Consultation Report Generator allowed the program coordinator to expedite sending formatted reports to students on their performance in ACT and SAT practice exams. The internal tool includes auto-formatting and auto-fill from information registered in the MongoDB.
             </p>
         </div>
-        <img src="imgs/bcp/bcplogo.jpeg" alt="">
+        <a href="projects/con_report.html"><img style="margin-left: 50px;" src="imgs/bcp/bcplogo.jpeg" alt=""></a>
     </div>
 
     <div class="container" style="width:100%; height: auto; margin-bottom: 50px; margin-left: 10%;">
@@ -87,24 +87,22 @@
                 Mine Sweeper
             </h2>
             <p style="width: 80%;">
-                Mine Sweeper was the final project of COP 3504 my freshman year. The project consisted of using C++ and the SFML to create Minesweeper, implementing techniques like iterating through linked lists.
+                Mine Sweeper was the final project of COP 3504 my freshman year. The project consisted of using C++ and the SFML to create Minesweeper, implementing techniques like iterating through 2D linked lists.
             </p>
         </div>
     </div>
 
-    <footer style="padding-left: 20px; padding-right: 20px;">
-        <div class="container" style="max-width: 100%; height: 100px; flex-direction: row; margin-bottom: -100px;">
-            <h1>Daniel Parra</h1>
-            <a>Resume</a>
-            <a>Contact</a>
-            <a>Involvements</a>
-        </div>
+    <footer class="container" style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+        <p><a href = "https://github.com/DaniParr"> Github </a></p>
+        <p><a href = "https://www.linkedin.com/in/daniel-parra-143143217/">LinkedIn</a></p>
+        <p>dparra1@ufl.edu</p>
     </footer>
     <style>
         h1 {
             font-family: 'Lexend Zetta', sans-serif;
             font-size: 36px;
         }
+        
         h2 {
             font-family: 'Manrope', sans-serif;
         }
@@ -117,6 +115,12 @@
 
         .largeTitle {
             font-size: 64px;
+        }
+
+        @media (max-width: 768px) {
+            .largeTitle {
+                font-size: 50px;
+            }
         }
 
         .mediumTitle {
