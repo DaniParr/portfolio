@@ -29,7 +29,7 @@
         </div>
     </header>
     
-    <h1 style="padding-left: 20px;">Involvements</h1>
+    <h1 style="padding-left: 20px;" class="largeTitle">Involvements</h1>
 
     <div class="container" style="width:90%; height: auto; margin-bottom: 50px; margin-left: -50px; flex-direction: column;">
         <h1 style="margin-left: 70px;">Work Experience</h1>
@@ -138,6 +138,11 @@
             font-family: 'Lexend Zetta', sans-serif;
             font-size: 36px;
         }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+        }
         h2 {
             font-family: 'Manrope', sans-serif;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -151,6 +156,12 @@
 
         .largeTitle {
             font-size: 64px;
+        }
+
+        @media (max-width: 768px) {
+            .largeTitle {
+                font-size: 30px;
+            }
         }
 
         .mediumTitle {
