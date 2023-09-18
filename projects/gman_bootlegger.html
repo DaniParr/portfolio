@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Parra</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@300&family=Manrope:wght@300;800&display=swap" rel="stylesheet">
+</head>
+<body style="padding-left: 20px; padding-right: 20px;">
+    <header style="margin-top: -30px;">
+        <div class="container" style="max-width: 100%; height: 100px; flex-direction: row; justify-content: space-between; padding-top: 30px;">
+            <div style="display: flex; flex-direction: row;">
+                <img style="max-width: 100px; max-height: 100px; margin-right: 20px;" src="../imgs/dpicon.png" alt="">
+                <h1><a href="../main.html">Daniel Parra</a></h1>
+            </div>
+            
+            <div style="padding: 20px; display: flex; flex-direction: row;">
+                <p><a style="padding: 20px;">Resume</a></p>
+                <p>|</p>
+                <p><a style="padding: 20px;" href="../contact.html">Contact</a></p>
+                <p>|</p>
+                <p><a style="padding: 20px;" href="../involvements.html">Involvements</a></p>
+            </div>
+            
+            
+        </div>
+    </header>
+    
+    <p style="font-size: 20px;"><a href="../involvements.html">Involvements</a> > <a href="../organizations/mil.html">Machine Intelligence Lab</a> > <a href="gman_bootlegger.html">GMan or Bootlegger Object Detection</a></p>
+
+    <h1 id="title">GMan or Bootlegger Object Detection</h1>
+
+    <div style="display: flex; flex-direction: row;">
+        <div id="image" style="width: 30vw; height: 30vw; border-radius: 20px; background-color: gray; background-image: url('../imgs/mil/gmanbootlegger1.png'); background-repeat: no-repeat; background-size: cover;"></div>
+        <p id="content" style="width: 60%; padding: 20px;">In Robosub 2022 and 2023, one of the tasks is to distinguish between two images. One of a Bootlegger and the other of a GMan. In order to successfully accomplish this task, the underwater autonomous vehicle (UAV) must use computer vision to distinguish between the two. Training the YOLOv5 object detection model by Ultralytics, I was able to achieve detections upwards of 90% confidence on live feeds.</p>
+    </div>
+
+    <h1>Features</h1>
+
+    <div id="features" class="involvements" style="display: flex; flex-direction: column;">
+        <div style="width: 20%; height: 20%; border-radius: 20px; background-color: gray;">
+        </div>
+        <div class="container" style="flex-direction: column; margin: 20px;">
+            <h2>Constrained Sample Size</h2>
+            <p> Working on this project remotely meant I did not have footage from the lab directly from our UAV. However, acknowledging that recordings of the obstacle course were available on the internet, I used screen shots from each run that displayed the presence of a GMan or Bootlegger to train the model and provide a proof of concept.</p>
+        </div>
+        <div style="width: 20%; height: 20%; border-radius: 20px; background-color: gray;">
+        </div>
+        <div class="container" style="flex-direction: column; margin: 20px;">
+            <h2>Object Detection</h2>
+            <p> By using and image labeling software, I was able to compile the labels and their locations to train the YOLOv5 model to detect the GMan and Bootlegger. </p>
+        </div>
+    </div>
+
+    <h1>Supervisors</h1>
+
+    <div id="supervisors" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+        <div id="supervisors" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+            <div class = "container" style="display: flex; flex-direction: row; margin: 20px;">
+                <div>
+                    <h2>Dr. Shwartz</h2>
+                    <a href="https://www.ece.ufl.edu/people/faculty/eric-schwartz/"><p>ems@ufl.edu</p></a>
+                </div>
+            </div>
+        </div>
+        <div id="supervisors" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+            <div class = "container" style="display: flex; flex-direction: row; margin: 20px;">
+                <div>
+                    <h2>Cameron Brown</h2>
+                    <a href="https://www.linkedin.com/in/cameron-brown37/"></a><p>linkedin.com/in/cameron-brown37/</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Gallery</h1>
+
+    <div style=" width: 100%; display: flex; flex-direction: row; flex-wrap: wrap;">
+        <img style="max-width: 100%; max-height: 100%; margin: 20px;" src="../imgs/mil/gmanbootlegger1.png">
+        <img style="max-width: 100%; max-height: 100%; margin: 20px;" src="../imgs/mil/gmanbootleggerstats.png">
+    </div>
+
+    <footer style="padding-left: 20px; padding-right: 20px;">
+        <div class="container" style="max-width: 100%; height: 100px; flex-direction: row;">
+            <h1>Daniel Parra</h1>
+            <ul>
+                <li>Resume</li>
+                <li>Contact</li>
+                <li>Involvements</li>
+            </ul>
+        </div>
+    </footer>
+    <style>
+        h1 {
+            font-family: 'Lexend Zetta', sans-serif;
+            font-size: 36px;
+        }
+        h2 {
+            font-family: 'Manrope', sans-serif;
+        }
+        p  {
+            font-family: "Manrope", sans-serif;
+        }
+        li  {
+            font-family: "Manrope", sans-serif;
+        }
+
+        .largeTitle {
+            font-size: 64px;
+        }
+
+        .mediumTitle {
+            font-size: 42px;
+        }
+    </style>
+</body>
+</html>

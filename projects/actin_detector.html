@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Parra</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@300&family=Manrope:wght@300;800&display=swap" rel="stylesheet">
+</head>
+<body style="padding-left: 20px; padding-right: 20px;">
+    <header style="margin-top: -30px;">
+        <div class="container" style="max-width: 100%; height: 100px; flex-direction: row; justify-content: space-between; padding-top: 30px;">
+            <div style="display: flex; flex-direction: row;">
+                <img style="max-width: 100px; max-height: 100px; margin-right: 20px;" src="../imgs/dpicon.png" alt="">
+                <h1><a href="../main.html">Daniel Parra</a></h1>
+            </div>
+            
+            <div style="padding: 20px; display: flex; flex-direction: row;">
+                <p><a style="padding: 20px;">Resume</a></p>
+                <p>|</p>
+                <p><a style="padding: 20px;" href="../contact.html">Contact</a></p>
+                <p>|</p>
+                <p><a style="padding: 20px;" href="../involvements.html">Involvements</a></p>
+            </div>
+            
+            
+        </div>
+    </header>
+
+    <p style="font-size: 20px;"><a href="../involvements.html">Involvements</a> > <a href="../organizations/mbl.html">Dr. Tang's Mechano-biology Lab</a> > <a href="actin_detector.html">Actin Strands Detector with MATLAB</a></p>
+    
+    <h1 id="title">Actin Strands Detector with MATLAB</h1>
+
+    <div style="display: flex; flex-direction: row;">
+        <div id="image" style="width: 30vw; height: 30vw; border-radius: 20px; background-color: gray; background-image: url('../imgs/mbl/actinLength.png'); background-repeat: no-repeat; background-size: cover;"></div>
+        <p id="content" style="width: 60%; padding: 20px;">This was the first algorithm I wrote as a member of the Mechanobiology lab. By using MATLAB's computer vision library, I was able to apply different edge detection filters like Sobel and Canny and incorporate a voting system to accurately detect actin strands in a cell.</p>
+    </div>
+
+    <h1>Features</h1>
+
+    <div id="features" class="involvements" style="display: flex; flex-direction: column;">
+        <div style="width: 20%; height: 20%; border-radius: 20px; background-color: gray;">
+        </div>
+        <div class="container" style="flex-direction: column; margin: 20px;">
+            <h2>Edge Detection</h2>
+            <p> By applying a Canny and Sobel edge detection filter over the image, I was able to compile a binary image that guided the edge detection algorithm.</p>
+        </div>
+        <div class="container" style="flex-direction: column; margin: 20px;">
+            <h2>Line Plotting</h2>
+            <p> Following the point voting system implemented, I was able to gather information on the length of each composite strand and their endpoints. This data was used to plot lines on the grayscaled image.</p>
+        </div>
+        <div class="container" style="flex-direction: column; margin: 20px;">
+            <h2>Composite Strand Combination</h2>
+            <p> A csv file was gathered of all the strands detected by the software. This data was then used to create a final analysis of the full length of actin strands and their thickness.</p>
+        </div>
+    </div>
+
+    <h1>Supervisors</h1>
+
+    <div id="supervisors" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+        <div class = "container" style="display: flex; flex-direction: row; margin: 20px;">
+            <div>
+                <h2>Dr. Xin Tang</h2>
+                <a href="https://mae.ufl.edu/people/profiles/xin-tang/"><p>xin.tang@ufl.edu</p></a>
+            </div>
+        </div>
+        <div class = "container" style="display: flex; flex-direction: row; margin: 20px;">
+            <div>
+                <h2>Miao Huang</h2>
+                <a href="https://www.linkedin.com/in/miao-huang-796424113/"><p>linkedin.com/in/miao-huang-796424113/</p></a>
+            </div>
+        </div>
+    </div>
+
+    <h1>Gallery</h1>
+    <div id="supervisors" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+        <img style="max-width: 100%; max-height: 100%; margin: 20px;" src="../imgs/mbl/line2.png">
+        <img style="max-width: 100%; max-height: 100%; margin: 20px;" src="../imgs/mbl/line3.png">
+        <img style="max-width: 100%; max-height: 100%; margin: 20px;" src="../imgs/mbl/line1.png">
+    </div>
+
+    <footer style="padding-left: 20px; padding-right: 20px;">
+        <div class="container" style="max-width: 100%; height: 100px; flex-direction: row;">
+            <h1>Daniel Parra</h1>
+            <ul>
+                <li>Resume</li>
+                <li>Contact</li>
+                <li>Involvements</li>
+            </ul>
+        </div>
+    </footer>
+    <style>
+        h1 {
+            font-family: 'Lexend Zetta', sans-serif;
+            font-size: 36px;
+        }
+        h2 {
+            font-family: 'Manrope', sans-serif;
+        }
+        p  {
+            font-family: "Manrope", sans-serif;
+        }
+        li  {
+            font-family: "Manrope", sans-serif;
+        }
+
+        .largeTitle {
+            font-size: 64px;
+        }
+
+        .mediumTitle {
+            font-size: 42px;
+        }
+    </style>
+</body>
+</html>

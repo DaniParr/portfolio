@@ -1,0 +1,76 @@
+header {
+    width: 99%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+body {
+    margin-top: 150px;
+    background-image: url("../imgs/background2.png");
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+@media (min-width: 786px) {
+    p {
+        font-size: 1.5vw;
+    }
+}
+
+li
+{
+    color: white;
+}
+
+.container {
+    backdrop-filter: blur(5px);
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 10px rgba(255, 0, 225, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.box {
+    display: flex;
+    margin: 10px;
+    opacity: 0.5;
+    border-radius: 10px;
+    width: 24vw;
+    height: 24vw;
+    background-color: rgb(129, 129, 129);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box:hover {
+    opacity: 1;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 20px;
+}
