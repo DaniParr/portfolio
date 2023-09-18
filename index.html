@@ -81,7 +81,7 @@
     </div>
 
     <div class="container" style="width:100%; height: auto; margin-bottom: 50px; margin-left: 10%;">
-        <img src="imgs/minesweeper/minesweeper.png" alt="">
+        <a href="projects/minesweeper.html"><img src="imgs/minesweeper/minesweeper.png" alt=""></a>
         <div style="margin-left: 20px; margin-right: 100px;">
             <h2 class="mediumTitle">
                 Mine Sweeper
@@ -102,9 +102,14 @@
             font-family: 'Lexend Zetta', sans-serif;
             font-size: 36px;
         }
-        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+        }
         h2 {
             font-family: 'Manrope', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         p  {
             font-family: "Manrope", sans-serif;
@@ -119,7 +124,7 @@
 
         @media (max-width: 768px) {
             .largeTitle {
-                font-size: 50px;
+                font-size: 30px;
             }
         }
 
