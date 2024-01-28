@@ -68,6 +68,11 @@ li
     .convertible {
         flex-direction: column;
     }
+
+    .convertible-rev {
+        flex-direction: column-reverse;
+    }
+
     .hidable {
         display: none;
     }
@@ -93,6 +98,14 @@ li
     background-color: rgb(129, 129, 129);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 768px)
+{
+    .box {
+        width: 60vw;
+        height: 60vw;
+    }
 }
 
 .box:hover {

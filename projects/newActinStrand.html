@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Parra</title>
+    <link rel="stylesheet" type="text/css" href="../style/newStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@300&family=Manrope:wght@300;800&display=swap" rel="stylesheet">
+    <style>
+        .image.clicked {
+            width: 50vh;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <nav style="background-color: black; top: 0;">
+        <a href="../newIndex.html">🧑🏻‍💻 Daniel Parra</a>
+        <a href="../newIndex.html#section6">🧠 All Projects</a>
+        <a href="mailto:dparra1@ufl.edu">🤳🏻 Contact</a>
+        <a href="https://www.linkedin.com/in/daniparr">🌐 LinkedIn</a>
+        <a href="https://github.com/DaniParr">💻 GitHub</a>
+        <a  href="https://docs.google.com/document/d/1ExwWYZugIeIZfHmk5GCbaL_X25IjzIqnAOj3G_c06TY/edit?usp=sharing">📄 Resume</a>
+    </nav>
+    
+    <section style="background-color: rgb(2, 35, 7); color: rgb(63, 234, 11);">
+        <div style="display: flex; flex-direction: column;">
+            <p><a href="../newIndex.html#section5">🏢 Organizations</a> -> <a href="../organizations/newMbl.html">Dr. Tang's Mechanobiology Lab</a> -> Actin Strand Detector</p>
+            <h1>Actin Strand Detector</h1>
+        </div>
+    </section>
+    <section style="background-color: rgb(63, 234, 11); color: rgb(2, 35, 7); align-items: flex-start;">
+        <div style="display: flex; flex-direction: column; width: 90%; padding: 50px;">
+            <h1>Description</h1>
+            <p>October 2022</p>
+            <p>This was the first algorithm I wrote as a member of the Mechanobiology lab. By using MATLAB's computer vision library, I was able to apply different edge detection filters like Sobel and Canny and incorporate a voting system to accurately detect actin strands in a cell.</p>
+            <h1>Features</h1>
+            <h2>Edge Detection</h2>
+            <p>By applying a Canny and Sobel edge detection filter over the image, I was able to compile a binary image that guided the edge detection algorithm.</p>
+            <h2>Hough Transform Line Plotting</h2>
+            <p>Following the point voting system implemented, I was able to gather information on the length of each composite strand and their endpoints. This data was used to plot lines on the grayscaled image.</p>
+            <h2>Composite Strand Combination</h2>
+            <p>A csv file was gathered of all the strands detected by the software. This data was then used to create a final analysis of the full length of actin strands and their thickness.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; width: 90%; padding: 50px;">
+            <h1>Supervisors</h1>
+            <div style="margin-bottom: 20px; padding: 20px; background-color: rgb(2, 35, 7); border-radius: 20px; width: 90%;">
+                <h2 style="font-size: 15px; margin: 0; color: rgb(63, 234, 11);">Xin Tang</h2>
+                <a href="https://mae.ufl.edu/people/profiles/xin-tang/" style="font-size: 15px; margin: 0;">xin.tang@ufl.edu</a>
+            </div>
+            <div style="margin-bottom: 20px; padding: 20px; background-color: rgb(2, 35, 7); border-radius: 20px; width: 90%;">
+                <h2 style="font-size: 15px; margin: 0; color: rgb(63, 234, 11);">Haung Miao</h2>
+                <a href="https://www.linkedin.com/in/miao-huang-796424113/" style="font-size: 15px; margin: 0;">linkedin.com/in/miao-huang-796424113/</a>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: rgb(2, 35, 7); color: rgb(63, 234, 11);">
+        <div style="display: flex; flex-direction: column; width: 90%;">
+            <h1>Gallery</h1>
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+                <img onclick="toggleSize(this)" class="image" style="margin: 20px; border-radius: 10px;" src="../imgs/mbl/actinLength.png">
+                <img onclick="toggleSize(this)" class="image" style="margin: 20px; border-radius: 10px;" src="../imgs/mbl/line2.png">
+                <img onclick="toggleSize(this)" class="image" style="margin: 20px; border-radius: 10px;" src="../imgs/mbl/line1.png">
+                <img onclick="toggleSize(this)" class="image" style="margin: 20px; border-radius: 10px;" src="../imgs/mbl/line4.png">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleSize(element) {
+            element.classList.toggle('clicked');
+        }
+    </script>
+</body>
+</html>

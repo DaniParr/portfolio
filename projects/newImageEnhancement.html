@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Parra</title>
+    <link rel="stylesheet" type="text/css" href="../style/newStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@300&family=Manrope:wght@300;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav style="background-color: black; top: 0;">
+        <a href="../newIndex.html">🧑🏻‍💻 Daniel Parra</a>
+        <a href="../newIndex.html#section6">🧠 All Projects</a>
+        <a href="mailto:dparra1@ufl.edu">🤳🏻 Contact</a>
+        <a href="https://www.linkedin.com/in/daniparr">🌐 LinkedIn</a>
+        <a href="https://github.com/DaniParr">💻 GitHub</a>
+        <a  href="https://docs.google.com/document/d/1ExwWYZugIeIZfHmk5GCbaL_X25IjzIqnAOj3G_c06TY/edit?usp=sharing">📄 Resume</a>
+    </nav>
+    
+    <section style="background-color: rgb(10, 10, 61); color: orange;">
+        <div style="display: flex; flex-direction: column;">
+            <p><a href="../newIndex.html#section5">🏢 Organizations</a> -> <a href="../organizations/newMil.html">Machine Intelligence Lab (MIL)</a> -> Underwater Image Enhancement with AI</p>
+            <h1>Underwater Image Enhancement with AI</h1>
+        </div>
+    </section>
+    <section style="background-color: orange; color: rgb(10, 10, 61); align-items: flex-start;">
+        <div style="display: flex; flex-direction: column; width: 90%; padding: 50px;">
+            <h1>Description</h1>
+            <div style="margin-bottom: 20px; padding: 20px; background-color: rgb(10, 10, 61); border-radius: 20px; width: 90%;">
+                <a href="https://github.com/uf-mil/mil/tree/980_underwater_vision_enhancement">🔗 MIL GitHub</a>
+            </div>
+            <p>March 2023</p>
+            <p>In order to improve the effectiveness of the Machine Intelligence Lab's autonomous underwater vehicle (AUV), Subjugator, it needs to be able to make accurate distinctions in its environment. With water refracting light, it can be difficult to use the raw image from the camera to distinct the types of objects in view for the AUV. Utilizing the machine learning model provided by Xuelei Chen, Pin Zhang, Lingwei Quan, Chao Yi, Cunyue Lu from their paper Underwater "Image Enhancement based on Deep Learning and Image Formation Model," we were able to successfully drive data from one of the camera topics to be enhanced and be constantly output for clearer imaging.</p>
+            <h1>Features</h1>
+            <h2>Internet of Things with ROS</h2>
+            <p>In order to connect the camera topic to the image enhacnement node, we utilized the Robot Operating System frame work to subscribe to the camera topic. From there we fed a constant stream of images from the camera to be processed.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; width: 90%; padding: 50px;">
+            <h1>Supervisors</h1>
+            <div style="margin-bottom: 20px; padding: 20px; background-color: rgb(10, 10, 61); border-radius: 20px; width: 90%;">
+                <h2 style="font-size: 15px; margin: 0; color: orange;">Dr. Shwartz</h2>
+                <a href="https://www.ece.ufl.edu/people/faculty/eric-schwartz/" style="font-size: 15px; margin: 0;">ems@ufl.edu</a>
+            </div>
+            <div style="margin-bottom: 20px; padding: 20px; background-color: rgb(10, 10, 61); border-radius: 20px; width: 90%;">
+                <h2 style="font-size: 15px; margin: 0; color: orange;">Cameron Brown</h2>
+                <a href="https://www.linkedin.com/in/cameron-brown37/" style="font-size: 15px; margin: 0;">linkedin.com/in/cameron-brown37/</a>
+            </div>
+            <h1>Contributors</h1>
+            <div style="margin-bottom: 20px; padding: 20px; background-color: rgb(10, 10, 61); border-radius: 20px; width: 90%;">
+                <h2 style="font-size: 15px; margin: 0; color: orange;">Blake Sanders</h2>
+                <a href="https://www.linkedin.com/in/blake-sanders-10497/" style="font-size: 15px; margin: 0;">linkedin.com/in/blake-sanders-10497/</a>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: rgb(10, 10, 61); color: orange;">
+        <div style="display: flex; flex-direction: column; width: 90%;">
+            <h1>Gallery</h1>
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+                <img onclick="toggleSize(this)" class="image" style="margin: 20px; border-radius: 10px;" src="../imgs/mil/sample2_1.png">
+                <img onclick="toggleSize(this)" class="image" style="margin: 20px; border-radius: 10px;" src="../imgs/mil/sample2.png">
+                <img style="width: 90%; height: auto; margin-bottom: 50px; border-radius: 20px;" src="../imgs/mil/sample3_1.png">
+                <img style="width: 90%; height: auto; margin-bottom: 50px; border-radius: 20px;" src="../imgs/mil/sample3.png">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleSize(element) {
+            element.classList.toggle('clicked');
+        }
+    </script>
+</body>
+</html>

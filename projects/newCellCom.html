@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Parra</title>
+    <link rel="stylesheet" type="text/css" href="../style/newStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@300&family=Manrope:wght@300;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav style="background-color: black; top: 0;">
+        <a href="../newIndex.html">🧑🏻‍💻 Daniel Parra</a>
+        <a href="../newIndex.html#section6">🧠 All Projects</a>
+        <a href="mailto:dparra1@ufl.edu">🤳🏻 Contact</a>
+        <a href="https://www.linkedin.com/in/daniparr">🌐 LinkedIn</a>
+        <a href="https://github.com/DaniParr">💻 GitHub</a>
+        <a  href="https://docs.google.com/document/d/1ExwWYZugIeIZfHmk5GCbaL_X25IjzIqnAOj3G_c06TY/edit?usp=sharing">📄 Resume</a>
+    </nav>
+    
+    <section style="background-color: rgb(2, 35, 7); color: rgb(63, 234, 11);">
+        <div style="display: flex; flex-direction: column;">
+            <p><a href="../newIndex.html#section5">🏢 Organizations</a> -> <a href="../organizations/newMbl.html">Dr. Tang's Mechanobiology Lab</a> -> Cancer Cell Calcium Signaling Detection AI</p>
+            <h1>Cancer Cell Calcium Signaling Detection AI</h1>
+        </div>
+    </section>
+    <section style="background-color: rgb(63, 234, 11); color: rgb(2, 35, 7); align-items: flex-start;">
+        <div style="display: flex; flex-direction: column; width: 90%; padding: 50px;">
+            <h1>Description</h1>
+            <p>🧑🏻‍💻 January 2024</p>
+            <p>The Mechanobiology's Cancer Cell Calcium Signaling Detection AI is an AI tool designed for unraveling the communication dynamics within colon cancer cells. This software detects and analyzes flashes of calcium waves, offering insights into frequency, amplitude, and multi-cellular propagation patterns. Tailored for graduate students, it provides a user-friendly interface to explore and visualize intricate cellular communication networks, fostering a deeper understanding of colon cancer progression and behavior.</p>
+            <h1>Features</h1>
+            <h2>85-90% Prediction Accuracy</h2>
+            <p>Achieving a remarkable 85-90% accuracy on unseen data, our Cancer Cell Calcium Signaling Detection AI showcases its robust performance in deciphering communication dynamics within colon cancer cells. Leveraging advanced algorithms and 3D Convolutional Neural Networks (3DCNN), this AI excels at generalizing patterns and accurately distinguishing between shifts in positions and calcium spikes, ensuring reliable insights even when faced with previously unseen data. Its high accuracy underscores the efficacy of our approach, empowering researchers with a trustworthy tool for unraveling the complexities of cancer cell communication.</p>
+            <h2>Parallel Frame Processing</h2>
+            <p>To enhance the efficiency of our analysis, I leveraged Python's threading capabilities to implement a parallelized approach in processing ND2 file frames. By strategically dividing the frames into manageable chunks, each thread independently analyzes a subset of the data simultaneously. This parallel processing not only optimizes resource utilization but also significantly accelerates the overall analysis time. The use of Python threads proves instrumental in harnessing the power of multi-core systems, offering a scalable and efficient solution for expediting the intricate analysis of cellular communication patterns in colon cancer cells.</p>
+            <h2>Easy-to-Use Training Interface</h2>
+            <p>Our software features an intuitive user interface (UI) designed to streamline the collection of training data with ease. The UI provides a user-friendly environment where researchers can effortlessly gather and organize the necessary data for training the  Calcium Signaling Detection AI. Through clear navigation and interactive elements, users can input and annotate data points, ensuring the creation of comprehensive and accurate training datasets. This intuitive UI empowers researchers to efficiently collect training data, enabling seamless integration into the AI's learning process for enhanced performance and insights.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; width: 90%; padding: 50px;">
+            <h1>As Full Stack Developer...</h1>
+            <p>I spearheaded the crucial task of assembling a pristine dataset comprising approximately 800 samples—400 with flashes and 400 without. My responsibilities extended to crafting a meticulous preprocessing script, ensuring the data's cleanliness and optimization before it underwent model ingestion.
+
+            The core of my contributions lay in architecting the 3D Convolutional Neural Network (CNN), a pivotal component in our AI framework. To enhance the model's generalization capabilities, I implemented strategic measures, including the incorporation of a dropout layer and the application of L1 and L2 regularization. These measures were instrumental in fortifying the model against overfitting, thereby paving the way for robust and accurate calcium signal detection. My role exemplified a holistic approach, from data curation to model architecture, ensuring the AI's efficacy in deciphering complex cellular communication patterns.</p>
+            <h1>Supervisors</h1>
+            <div style="margin-bottom: 20px; padding: 20px; background-color: rgb(2, 35, 7); border-radius: 20px; width: 90%;">
+                <h2 style="font-size: 15px; margin: 0; color: rgb(63, 234, 11);">Xin Tang</h2>
+                <a href="https://mae.ufl.edu/people/profiles/xin-tang/" style="font-size: 15px; margin: 0;">xin.tang@ufl.edu</a>
+            </div>
+            <div style="margin-bottom: 20px; padding: 20px; background-color: rgb(2, 35, 7); border-radius: 20px; width: 90%;">
+                <h2 style="font-size: 15px; margin: 0; color: rgb(63, 234, 11);">Chenyu Liang</h2>
+                <a href="https://pubs.rsc.org/en/results?searchtext=Author%3AChenyu%20Liang" style="font-size: 15px; margin: 0;">pubs.rsc.org</a>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: rgb(2, 35, 7); color: rgb(63, 234, 11);">
+        <div style="display: flex; flex-direction: column; width: 90%;">
+            <h1>Gallery</h1>
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+                <img onclick="toggleSize(this)" class="image" style="margin: 20px; border-radius: 10px; border: 1px solid rgb(63, 234, 11);" src="../imgs/mbl/spike0.gif">
+                <img onclick="toggleSize(this)" class="image" style="margin: 20px; border-radius: 10px; border: 1px solid rgb(63, 234, 11);" src="../imgs/mbl/spike1.gif">
+                <img onclick="toggleSize(this)" class="image" style="margin: 20px; border-radius: 10px; border: 1px solid red;" src="../imgs/mbl/spike2.gif">
+                <img onclick="toggleSize(this)" class="image" style="margin: 20px; border-radius: 10px; border: 1px solid red;" src="../imgs/mbl/spike3.gif">
+                <img style="width: 100%; height: auto; margin-bottom: 50px; border-radius: 20px;" src="../imgs/mbl/spike_training.png">
+                <img style="width: 100%; height: auto; margin-bottom: 50px; border-radius: 20px;" src="../imgs/mbl/spike_model_results.png">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleSize(element) {
+            element.classList.toggle('clicked');
+        }
+    </script>
+</body>
+</html>
