@@ -70,16 +70,19 @@ body {
 h1 {
     font-family: 'Lexend Zetta', sans-serif;
     font-size: 50px;
+    box-sizing: border-box;
 }
 
 h2 {
     font-family: 'Manrope', sans-serif;
     font-size: 30px;
+    box-sizing: border-box;
 }
 
 h3 {
     font-family: 'Manrope', sans-serif;
     font-size: 20px;
+    box-sizing: border-box;
 }
 
 p {
@@ -93,6 +96,10 @@ li  {
 img {
     width: 300px;
     height: 300px;
+    box-sizing: border-box;
+}
+div {
+    box-sizing: border-box;
 }
 
 .column
@@ -143,7 +150,15 @@ img {
     p {
         font-size: 3vw;
     }
+    nav {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        max-width: max-content;
+    }
     nav a {
+        display: flex;
+        width: 100%;
         font-size: 2.5vw;
     }
     img {
@@ -166,7 +181,7 @@ img {
     }
     .sector
     {
-        width: 100%;
+        width: 90%;
     }
 }
 
